@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
 const cdk = require('@aws-cdk/core');
-const { CdktestStack } = require('../lib/cdktest-stack');
+const { ModulloCliPipelinesStack } = require('../lib/modullo-cli-pipelines-stack');
 
 const app = new cdk.App();
-new CdktestStack(app, 'CdktestStack', {
+new ModulloCliPipelinesStack(app, 'ModulloCliPipelinesStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
